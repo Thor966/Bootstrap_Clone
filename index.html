@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+      <link rel="icon" type="image/png" sizes="32x32"  href="images/Bootstrap logo title.png">
+
+</head>
+
+<body class="bg-dark text-white">
+    <!-- Header -->
+    <header class="main">
+        <div class="main container-fluid">
+            <div class=" header" style="z-index: 1030;">
+
+
+                <nav class="navbar navbar-expand-lg navbar2 container-fluid">
+                    <div class="container-fluid">
+
+                        <div class="navbar-toggler border-0">
+                            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#mobile-offcanvas">
+                                <span class="bi bi-three-dots text-white"></span>
+                            </button>
+                            <a class="bi bi-search text-decoration-none text-white-50 ms-4" data-bs-toggle="modal"
+                                data-bs-target="#search3"></a>
+                        </div>
+
+
+
+                        <div class="navbar-brand">
+                            <a href="#" class="main-bootsrap-logo">
+                                <img src="images/bootsrap2.png" alt="Logo" width="40" height="40" class="img">
+                            </a>
+                        </div>
+
+
+                        <div class="navbar-collapse collapse" id="menu">
+                            <ul class="navbar-nav list-unstyled me-auto mb-2 mb-lg-0" navname">
+                                <li class="nav-item"><a href="docs.html" class="nav-link text-white">Docs</a></li>
+                                <li class="nav-item"><a href="examples.html" class="nav-link text-white">Examples</a></li>
+                                <li class="nav-item"><a href="icons.html" class="nav-link text-white">Icons</a></li>
+                                <li class="nav-item"><a href="theme.html" class="nav-link text-white" target="_blank">Themes</a></li>
+                                <li class="nav-item"><a href="https://blog.getbootstrap.com/" class="nav-link text-white" target="_blank">Blog</a></li>
+
+                                <li class="nav-item input-group search-main">
+                                    <div class="search-bar">
+                                        <span class="search-icon">
+                                            <i class="bi bi-search"></i>
+                                        </span>
+                                        <input type="text" class="search-input" placeholder="Search"
+                                            data-bs-toggle="modal" data-bs-target="#search2">
+                                        <span class="shortcut-key">CTRL K</span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- Nav Icons -->
+                            <div class="d-flex justify-content-around">
+                                <div class="me-4">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link text-white">
+                                                <i class="bi bi-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link text-white">
+                                                <i class="bi bi-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link text-white">
+                                                <i class="bi bi-opencollective"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="dropdown me-4 mt-2">
+                                <span class="differentiate me-3"></span>
+                                <a class="dropdown-toggle text-decoration-none text-white"
+                                    data-bs-toggle="dropdown">v5.3</a>
+                                <span class="differentiate ms-3"></span>
+
+                                <ul class="list-unstyled dropdown-menu bg-dark  dropdown-center">
+                                    <li><span class="dropdown-item-text"><a
+                                                class="dropdown-item text-decoration-none text-white disabled">v5
+                                                releases</a></span></li>
+                                    <li><span class="dropdown-item-text"><a
+                                                class="dropdown-item text-decoration-none text-white">Latest(5.3.x)</a></span>
+                                    </li>
+                                    <li><span class="dropdown-item-text"><a
+                                                class="dropdown-item text-decoration-none text-white">v5.2.3</a></span>
+                                    </li>
+                                    <li><span class="dropdown-item-text"><a
+                                                class="dropdown-item text-decoration-none text-white">v5.1.3</a></span>
+                                    </li>
+                                    <li><span class="dropdown-item-text"><a
+                                                class="dropdown-item text-decoration-none text-white">v.5.0.2</a></span>
+                                    </li>
+                                    <li class="dropdown-divider-"></li>
+                                    <li><span class="dropdown-item-text"><a
+                                                class="dropdown-item text-decoration-none text-white">v4.6.x</a></span>
+                                    </li>
+                                    <li><span class="dropdown-item-text"><a
+                                                class="dropdown-item text-decoration-none text-white">v3.4.1</a></span>
+                                    </li>
+                                    <li><span class="dropdown-item-text"><a
+                                                class="dropdown-item text-decoration-none text-white">v2.3.2</a></span>
+                                    </li>
+                                    <li class="dropdown-divider"></li>
+                                    <li><span class="dropdown-item-text"><a
+                                                class="dropdown-item text-decoration-none text-white">All
+                                                Versions</a></span>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="dropdown mt-2">
+                                <a class="dropdown-toggle bi bi-moon-stars-fill text-white text-decoration-none"
+                                    data-bs-toggle="dropdown"></a>
+
+                                <ul class="dropdown-menu list-unstyled bg-dark">
+                                    <li>
+                                        <button class="dropdown-item text-white text-decoration-none">
+                                            <i class="bi bi-sun-fill me-2"></i> Light
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-white text-decoration-none" href="#">
+                                            <i class="bi bi-moon-stars-fill me-2"></i> Dark
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-white text-decoration-none" href="#">
+                                            <i class="bi bi-circle-half me-2"></i> Auto
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- boot-mobile-offcanvas  -->
+    <div class="offcanvas offcanvas-start boot-mobile-offcanvas" tabindex="-1" id="mobile-offcanvas">
+        <div class="offcanvas-header mb-4">
+            <h2 class="text-white">Bootstrap</h2>
+            <button class="btn btn-close" data-bs-dismiss="offcanvas" data-bs-target="#mobile-offcanvas"></button>
+        </div>
+        <!-- border -->
+        <div class="border-bottom opacity-25"></div>
+        <!-- offcanvas body -->
+        <div class="offcanvas-body">
+            <!-- offcanvas content1 -->
+            <ul class="list-unstyled boot-mobile-offcanvas-ul1 mb-4">
+                <li><a href="#" class="text-white text-decoration-none">Docs</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Examples</a></li>
+                <li><a href="#" class="text-white text-decoration-none">icons</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Themes</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Blogs</a></li>
+            </ul>
+            <!-- border -->
+            <div class="border-bottom opacity-25"></div>
+
+            <!-- offcanvas content2 -->
+            <ul class="list-unstyled boot-mobile-offcanvas-ul1 mb-4">
+                <li><a href="#" class="text-white text-decoration-none bi bi-github"><span
+                            class="ms-3">GitHub</span></a></li>
+                <li><a href="#" class="text-white text-decoration-none bi bi-twitter-x"><span
+                            class="ms-3">Twitter</span></a></li>
+                <li><a href="#" class="text-white text-decoration-none bi bi-opencollective"><span class="ms-3">Open
+                            Collective</span></a></li>
+            </ul>
+
+            <!-- border -->
+            <div class="border-bottom opacity-25"></div>
+
+            <!-- offcanvas content3 -->
+            <div class="dropdown me-4 mt-4 mb-4">
+                <span class="me-3 text-white">Bootstrap</span>
+                <a class="dropdown-toggle text-decoration-none text-white" data-bs-toggle="dropdown">v5.3</a>
+
+
+                <ul class="list-unstyled dropdown-menu bg-dark  dropdown-center">
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white disabled">v5
+                                releases</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">Latest(5.3.x)</a></span>
+                    </li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v5.2.3</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v5.1.3</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v.5.0.2</a></span>
+                    </li>
+                    <li class="dropdown-divider-"></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v4.6.x</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v3.4.1</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v2.3.2</a></span></li>
+                    <li class="dropdown-divider"></li>
+                    <li><span class="dropdown-item-text"><a class="dropdown-item text-decoration-none text-white">All
+                                Versions</a></span>
+                    </li>
+                </ul>
+            </div>
+            <!-- border -->
+            <div class="border-bottom opacity-25"></div>
+
+            <!-- offcanvas content4 -->
+            <div class="dropdown  mt-4 mb-4" id="theme">
+
+                <a class="dropdown-toggle bi bi-moon-stars-fill text-white text-decoration-none"
+                    data-bs-toggle="dropdown" data-bs-target="#theme">
+                    <span class="text-white ms-2">Toggle theme</span>
+                </a>
+
+
+                <ul class="dropdown-menu list-unstyled bg-dark">
+                    <li>
+                        <a class="dropdown-item text-white text-decoration-none" href="#">
+                            <i class="bi bi-sun-fill me-2"></i> Light
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item text-white text-decoration-none" href="#">
+                            <i class="bi bi-moon-stars-fill me-2"></i> Dark
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item text-white text-decoration-none" href="#">
+                            <i class="bi bi-circle-half me-2"></i> Auto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Search bar modal -->
+    <div class="modal fade" id="search2">
+        <div class=" modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark">
+                <div class="modal-header d-flex justify-content-center ">
+                    <div class="search-bar2 d-flex justify-content-center bg-black">
+                        <span class="search-icon2">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input type="text" class="search-input  bg-black" placeholder="Search">
+                    </div>
+
+                </div>
+
+                <div class="modal-body text-center align-center">
+                    <span class=" ">No recent searches</span>
+
+                    <div class="mt-5 foot text-center align-center">
+                        <div class="w-50 ">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li class="select"><span class="bi bi-arrow-return-left me-2"></span>to
+                                    select</li>
+                                <li class="select"><span class="bi bi-arrow-up me-1"></span><span
+                                        class="bi-arrow-down me-2"></span>to Nevigate</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Mobile search bar -->
+    <div class="modal fade" id="search3">
+        <div class=" modal-dialog modal-dialog-centered modal-fullscreen">
+            <div class="modal-content bg-dark">
+                <div class="modal-header d-flex justify-content-center ">
+                    <div class="search-bar2 d-flex justify-content-center bg-black ms-5">
+                        <span class="search-icon2">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input type="text" class="search-input  bg-black" placeholder="Search">
+
+                    </div>
+                    <button class="btn btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center align-center">
+                    <span class=" ">No recent searches</span>
+
+                    <div class="mt-5 foot text-center align-center">
+                        <div class="w-50 ">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li class="select"><span class="bi bi-arrow-return-left me-2"></span>to
+                                    select</li>
+                                <li class="select"><span class="bi bi-arrow-up me-1"></span><span
+                                        class="bi-arrow-down me-2"></span>to Nevigate</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- main -->
+
+    <main>
+        <div class="main-body">
+
+            <div class="bd-masthead bg-dark">
+                <div class="notification mt-5">
+                    <a class="text-decoration-none text-black notification1">Get security Updates for Bootstrap 3&4
+                        <span class="bi bi-arrow-right ms-1"></span></a>
+                </div>
+
+                <div class="boot-logo">
+                    <img src="images/boot.png" width="200" height="165" alt="bootstrap">
+                </div>
+
+                <div class="build-fast">
+                    <p>Build fast, responsive sites<br> with Bootstrap</p>
+
+                    <div class="sub-build-fast">
+                        <p>Powerful, extensible, and feature-packed frontend toolkit. Build and<br> customize with Sass,
+                            utilize prebuilt grid system and components, and bring<br> projects to life with powerful
+                            JavaScript plugins.</p>
+                    </div>
+                </div>
+
+
+
+                <!-- links and button -->
+                <div
+                    class="buttons d-flex flex-column flex-lg-row align-items-md-stretch justify-content-center align-items-center gap-3 mb-4">
+
+                    <div class="bootstrap-cdn  mt-5 d-inline-block align-middle">
+                        <img src="images/cdn-boot.png">
+                    </div>
+
+                    <div class="mt-5 ms-4 Read-docs-btn ">
+                        <a href="docs.html"
+                            class="d-flex align-items-center justify-content-center text-decoration-none text-white btn btn-primary p-3 ">
+                            <span class="bi bi-book-half me-2"></span> Read The Docs
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- links and version -->
+            <p class="mt-2 text-center">
+                <strong style="color: rgba(222, 226, 230, 0.75);">Currently v5.3.3</strong>
+                <span class="px-1">.</span>
+                <a href="#" class="link-secondary">Downlod</a>
+                <span class="px-1">.</span>
+                <a href="#" class="link-secondary">All Releases</a>
+            </p>
+
+
+            <div class="d-flex justify-content-center mt-5">
+                <div class="btn-outer">
+                    <div class="d-inline-block btn-inner">
+                        <div class="btn-inner2">
+                            <span class="bi bi-chevron-left"></span>
+                            <span class="bi bi-chevron-right"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- info -->
+            <div class="text-center mt-5">
+                <div class="inner-info">
+                    <h3>Get started any way you want</h3>
+                    <p class="text-center mt-3">Jump right into building with Bootstrap—use the CDN, install it via
+                        package<br> manager, or download
+                        the source code.</p>
+
+                    <a href="#">Read installation docs <span class="bi bi-arrow-right ms-3"></span></a>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- Installation Info1 -->
+            <div class="main-grid mt-5 container-fluid">
+                <!-- ipm -->
+                <div class="ipm ms-2">
+                    <img src="images/square.png">
+
+                    <div class="ipm-info">
+                        <h5>Install via package manager</h5>
+                        <p>Install Bootstrap’s source Sass and JavaScript files via npm, RubyGems,<br> Composer, or
+                            Meteor.
+                            Package managed installs don’t include<br> documentation or our full build scripts. You can
+                            also
+                            use any demo from our Examples repo to quickly jumpstart Bootstrap projects.
+                        </p>
+                    </div>
+
+                    <div class="ipm-code1">
+                        <img src="images/npm i1.png">
+                    </div>
+
+                    <div class="ipm-code2 mt-3">
+                        <img src="images/npm i2.png">
+                    </div>
+
+                    <p class="mt-3"><a href="#">Read our installation docs</a> for more info and additional package
+                        managers.</p>
+
+                </div>
+
+                <div class="vertical-border opacity-25 me-5"></div>
+
+
+                <!-- CDN -->
+                <div class="ipm ms-2">
+                    <img src="images/earth.png">
+
+                    <div class="ipm-info">
+                        <h5>Install via package manager</h5>
+                        <p>Install Bootstrap’s source Sass and JavaScript files via npm, RubyGems,<br> Composer, or
+                            Meteor.
+                            Package managed installs don’t include<br> documentation or our full build scripts. You can
+                            also
+                            use any demo from our Examples repo to quickly jumpstart Bootstrap projects.
+                        </p>
+                    </div>
+
+                    <div class="ipm-code1">
+                        <img src="images/ipm-cdn1.png">
+                    </div>
+
+                    <div class="ipm-code2 mt-3">
+                        <img src="images/ipm-cdn2.png">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="d-flex justify-content-center container-fluid">
+                <div class="justify-content-center align-items-center main-img23">
+                    <h5 class="text-center">Read our getting started guides</h5>
+                    <p>Get a jump on including Bootstrap's source files in a new project with our official guides.</p>
+                    <div class="img23 d-flex justify-content-center">
+                        <a href="#" class="img-fluid text-decoration-none text-white">
+                            <img src="images/cube.png" alt="cube">
+                            <p class="ms-1 mt-3">Webpack</p>
+                        </a>
+
+                        <a href="#" class="img-fluid text-decoration-none text-white">
+                            <img src="images/box.png" alt="box">
+                            <p class="ms-3 mt-3">Parcel</p>
+                        </a>
+
+                        <a href="#" class="img-fluid text-decoration-none text-white">
+                            <img src="images/shield.png" alt="shield">
+                            <p class="ms-4 mt-3">Vite</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Customize everything with Sass -->
+
+            <div class="ms-3">
+                <div class="cews-img ms-3">
+                    <img src="images/clips.png">
+                </div>
+                <div class="cews-text ms-3">
+                    <h5>Customize everything with Sass</h5>
+                    <p class="mt-3">Bootstrap utilizes Sass for a modular and customizable architecture. Import only<br>
+                        the components
+                        you need, enable global options like gradients and shadows,<br> and write your own CSS with our
+                        variables, maps, functions, and mixins.
+                    </p>
+
+                    <a class="mt-2" href="#" class="">Learn more about customizing
+                        <span class="bi bi-arrow-right ms-2"></span>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Include all of Bootstrap’s Sass -->
+
+            <div class="row mt-5 ms-3">
+                <!-- all of Bootstrap’s Sass1 -->
+                <div class="col-md-5 mt-5 ms-3">
+                    <div class="ibs1 ms-3">
+                        <h4>Include all of Bootstrap’s Sass</h4>
+                        <p>Import one stylesheet and you're off to the races with every feature of our CSS.</p>
+                    </div>
+
+                    <div class="globalsass-code ms-3">
+                        <img src="images/globalsass-code.png" alt="Code snippet for global Sass options" class="mb-3">
+                    </div>
+                    <span href="#" class="text-decoration-none text-white">Learn more about our <a href="#">global Sass
+                            options</a>.</span>
+                </div>
+
+                <!-- all of Bootstrap’s Sass2 -->
+                <div class="col-md-6 mt-5 ms-5">
+                    <div class="ibs1">
+                        <h4>Include what you need</h4>
+                        <p>The easiest way to customize Bootstrap—include only the CSS you need.</p>
+                    </div>
+
+                    <div class="Bootstrap-Sass2">
+                        <img src="images/Bootstrap’s Sass2.png" alt="Code snippet for custom Sass options" class="mb-3">
+                    </div>
+                    <span href="#" class="text-decoration-none text-white">Learn more about <a href="#">using Bootstrap
+                            with Sass</a>.</span>
+                </div>
+            </div>
+
+
+
+            <!--Build and extend in real-time with CSS variables -->
+
+            <div class="mt-5 ms-3">
+                <div class="d-flex mt-5 ms-3">
+                    <div class="btn2-outer">
+                        <div class="d-inline-block btn2-inner">
+                            <div class="btn2-inner2">
+                                <span class="bi bi-braces"></span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="css-var mt-4 ms-3">
+                    <h4 class="mb-3">Build and extend in real-time with<br> CSS variables</h4>
+                    <p>Bootstrap 5 is evolving with each release to better utilize CSS variables for global theme
+                        styles, individual components, and even utilities. We provide dozens of variables for colors,
+                        font styles, and more at a :root level for use anywhere. On components and utilities, CSS
+                        variables are scoped to the relevant class and can easily be modified.
+                    </p>
+
+                    <a href="#">Learn more about CSS variables<span class="bi bi-arrow-right ms-4"></span></a>
+                </div>
+
+            </div>
+
+
+
+            <!-- Using CSS variables -->
+
+            <div class="row gx-md-5 ms-3  ucv">
+                <div class="col-lg-5 mt-4">
+                    <h3>Using CSS variables</h3>
+
+                    <p>Use any of our global :root variables to write new styles. CSS variables use the
+                        var(--bs-variableName) syntax and can be inherited by children elements.
+                    </p>
+
+                    <div class="ucv-img1">
+                        <img src="images/ucv1.png">
+                    </div>
+                </div>
+
+
+                <div class="col-lg-5 mt-4 ms-4 sub-ucv-2">
+                    <h3>Customizing via CSS variables</h3>
+
+                    <p>Override global, component, or utility class variables to customize Bootstrap just how you like.
+                        No need to redeclare each rule, just a new variable value.
+                    </p>
+
+                    <div class="ucv-img2">
+                        <img src="images/ucv2.png">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Components, meet the Utility API -->
+
+
+            <div class="mt-5 ms-3 w-75">
+
+                <!-- btns -->
+                <div class="d-flex ">
+                    <!-- btn1-->
+                    <div class="d-flex mt-5 ms-3">
+                        <div class="api-btn2-outer">
+                            <div class="d-inline-block api-btn2-inner">
+                                <div class="api-btn2-inner2">
+                                    <span class="bi bi-menu-button-wide-fill"></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="bi bi-plus-lg plus ms-3 mt-4 me-2 text-secondary"></div>
+                    </div>
+
+
+                    <!-- btn2-->
+                    <div class="d-flex mt-5 ms-3">
+                        <div class="api-btn2-outer">
+                            <div class="d-inline-block api-btn2-inner">
+                                <div class="api-btn2-inner2">
+                                    <span class="bi bi-braces-asterisk"></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ua mt-3">
+                    <h5>Components, meet the Utility API</h5>
+                    <p class="mt-3">New in Bootstrap 5, our utilities are now generated by our Utility API. We built it
+                        as a
+                        feature-packed Sass map that can be quickly and easily customized. It's never been easier to
+                        add, remove, or modify any utility classes. Make utilities responsive, add pseudo-class
+                        variants, and give them custom names.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Quickly customize components -->
+
+            <div class="qcs-main mt-5">
+                <div class="qcs w-50">
+                    <h4>Quickly customize components</h4>
+                    <p>Apply any of our included utility classes to our components to customize their appearance, like
+                        the navigation example below. There are hundreds of classes available—from positioning and
+                        sizing to colors and effects. Mix them with CSS variable overrides for even more control.</p>
+
+                    <div class="qcs-img1">
+                        <img src="images/qcs1.png" alt="Quickly customize components">
+                    </div>
+
+                    <div class="qcs-img2 mt-3">
+                        <img src="images/qcs2.png" alt="Quickly customize components">
+                    </div>
+
+                    <div class="mt-4 ms-1">
+                        <a href="#">Explore customized components<span class="bi bi-arrow-right ms-1"></span></a>
+                    </div>
+                </div>
+
+                <div class="ceu w-50">
+                    <h4>Create and extend utilities</h4>
+                    <p>Use Bootstrap's utility API to modify any of our included utilities or create your<br> own custom
+                        utilities for any project. Import Bootstrap first, then use Sass map<br> functions to modify,
+                        add,
+                        or remove utilities.</p>
+
+                    <div class="ceu-img">
+                        <img src="images/ceu.png" alt="Create and extend utilities">
+                    </div>
+
+                    <div class="mt-4 ms-1">
+                        <a href="#">Explore the utility API<span class="bi bi-arrow-right ms-1"></span></a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End -->
+
+            <!-- Powerful JavaScript plugins without jQuery -->
+
+            <div class="pjpj">
+                <div class="plugin-img">
+                    <img src="images/plugin-imag.png" alt="plugin">
+                </div>
+
+                <h4 class="mb-3">
+                    Powerful JavaScript plugins<br> without jQuery
+                </h4>
+                <p>Add toggleable hidden elements, modals and offcanvas menus, popovers and tooltips, and so much
+                    more—all without jQuery. Bootstrap's JavaScript is HTML-first, meaning most plugins are added with
+                    data attributes in your HTML. Need more control? Include individual plugins programmatically.
+                </p>
+                <a href="#">Learn more about Bootstrap JavaScript<span class="bi bi-arrow-right"></span></a>
+            </div>
+            <!-- End -->
+
+
+            <!-- Data attribute API -->
+
+            <div class="daa-main">
+                <div class="daa">
+                    <h4>Data attribute API</h4>
+
+                    <p>Why write more JavaScript when you can write HTML? Nearly all of Bootstrap's JavaScript plugins
+                        feature a first-class data API, allowing you to use JavaScript just by adding data attributes.
+                    </p>
+
+                    <div class="dropdown-main p-4 rounded">
+                        <div class="dropdown">
+                            <button class="btn btn-primary w-25 dropdown-toggle p-2" type="button"
+                                data-bs-toggle="dropdown">
+                                Dropdown
+                            </button>
+                            <ul class="dropdown-menu bg-dark " aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item text-white" href="#">Drop down items</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Drop down items</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Drop down items</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="daa-img">
+                        <img src="images/daa.png">
+                    </div>
+
+                    <div class="mt-2 fs-6">
+                        <a href="#" style="color: rgb(222, 226, 230);">Learn more about our JavaScript as modules and
+                            using the programmatic API.</a>
+                    </div>
+                </div>
+
+                <!-- csp -->
+                <div class="csp">
+                    <h4>Comprehensive set of plugins</h4>
+                    <p>Bootstrap features a dozen plugins that you can drop into any project. Drop them in all at once,
+                        or choose just the ones you need.
+                    </p>
+                    <!-- divider -->
+                    <div class="border opacity-25 me-2"></div>
+
+                    <!-- alert -->
+
+                    <div class="row g-3 mt-2">
+                        <!-- 1 -->
+                        <div class="col-sm-6 mb-2 ">
+                            <a href="#" class="d-block text-decoration-none lh-sm pe-lg-4">
+                                <h4 class="mb-0 fs-5 fw-semibold text-white">Alert</h4>
+                                <small class="text-secondary">Show and alert hide messageto your users.</small>
+                            </a>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="col-sm-6 mb-2">
+                            <a href="#" class="d-block text-decoration-none lh-sm pe-lg-4">
+                                <h4 class="mb-0 fs-5 fw-semibold text-white">Button</h4>
+                                <small class="text-secondary">Programmatically control the active state for
+                                    buttons.</small>
+                            </a>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="col-sm-6 mb-2">
+                            <a href="#" class="d-block text-decoration-none lh-sm pe-lg-4">
+                                <h4 class="mb-0 fs-5 fw-semibold text-white">Carousel</h4>
+                                <small class="text-secondary">Add slideshows to any page, including support for
+                                    crossfade.</small>
+                            </a>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="col-sm-6 mb-2">
+                            <a href="#" class="d-block text-decoration-none lh-sm pe-lg-4">
+                                <h4 class="mb-0 fs-5 fw-semibold text-white">Collapse</h4>
+                                <small class="text-secondary">Expand and collapse areas of content, or create
+                                    accordions.</small>
+                            </a>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="col-sm-6 mb-2">
+                            <a href="#" class="d-block text-decoration-none lh-sm pe-lg-4">
+                                <h4 class="mb-0 fs-5 fw-semibold text-white">Dropdown</h4>
+                                <small class="text-secondary">Create menus of links, actions, forms, and more.</small>
+                            </a>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="col-sm-6 mb-2">
+                            <a href="#" class="d-block text-decoration-none lh-sm pe-lg-4">
+                                <h4 class="mb-0 fs-5 fw-semibold text-white">Modal</h4>
+                                <small class="text-secondary">Add flexible and responsive dialogs to your
+                                    project.</small>
+                            </a>
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="col-sm-6 mb-2">
+                            <a href="#" class="d-block text-decoration-none lh-sm pe-lg-4">
+                                <h4 class="mb-0 fs-5 fw-semibold text-white">Offcanvas</h4>
+                                <small class="text-secondary">Build and toggle hidden sidebars into any page.</small>
+                            </a>
+                        </div>
+
+                        <!-- 8 -->
+                        <div class="col-sm-6 mb-2">
+                            <a href="#" class="d-block text-decoration-none lh-sm pe-lg-4">
+                                <h4 class="mb-0 fs-5 fw-semibold text-white">Popover</h4>
+                                <small class="text-secondary">Create custom overlays. Built on Popper.</small>
+                            </a>
+                        </div>
+
+                        <!-- 9 -->
+                        <div class="col-sm-6 mb-2">
+                            <a href="#" class="d-block text-decoration-none lh-sm pe-lg-4">
+                                <h4 class="mb-0 fs-5 fw-semibold text-white">Scrollspy</h4>
+                                <small class="text-secondary">Automatically update active nav links based on page
+                                    scroll.</small>
+                            </a>
+                        </div>
+
+                        <!-- 10 -->
+                        <div class="col-sm-6 mb-2">
+                            <a href="#" class="d-block text-decoration-none lh-sm pe-lg-4">
+                                <h4 class="mb-0 fs-5 fw-semibold text-white">Tab</h4>
+                                <small class="text-secondary">Allow Bootstrap nav components to toggle contents.</small>
+                            </a>
+                        </div>
+
+                        <!-- 11 -->
+                        <div class="col-sm-6 mb-2">
+                            <a href="#" class="d-block text-decoration-none lh-sm pe-lg-4">
+                                <h4 class="mb-0 fs-5 fw-semibold text-white">Toast</h4>
+                                <small class="text-secondary">Show and hide notifications to your visitors.</small>
+                            </a>
+                        </div>
+
+                        <!-- 12 -->
+                        <div class="col-sm-6 mb-2">
+                            <a href="#" class="d-block text-decoration-none lh-sm pe-lg-4">
+                                <h4 class="mb-0 fs-5 fw-semibold text-white">Tooltip</h4>
+                                <small class="text-secondary">Replace browser tooltips with custom ones. Built on
+                                    Popper.</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End -->
+
+
+            <!-- Personalize it with Bootstrap Icons -->
+
+            <div class="pwb-main">
+                <div class="pwb">
+                    <div class="pwb-main-img mb-2">
+                        <img src="images/pwb-main.png">
+                    </div>
+
+                    <div>
+                        <h4 class="mb-2">Personalize it with Bootstrap Icons</h4>
+                        <p>Bootstrap Icons is an open source SVG icon library featuring over 1,800 glyphs, with more
+                            added
+                            every release. They're designed to work in any project, whether you use Bootstrap itself or
+                            not.
+                            Use them as SVGs or icon fonts—both options give you vector scaling and easy customization
+                            via
+                            CSS.
+                        </p>
+
+                        <a href="#" class="fs-5">Get Bootstrap Icons<span
+                                class="bi bi-arrow-right ms-2 fs-5"></span></a>
+                    </div>
+                </div>
+
+                <!-- image -->
+                <div class="boot-image-big">
+                    <img src="images/bootstrap-bigimage.png">
+                </div>
+            </div>
+            <!-- End -->
+
+            <!-- Make it yours with official Bootstrap Themes -->
+            <div class="mbt-main">
+                <div class="mbt">
+                    <div class="mbt-main-img mb-2">
+                        <img src="images/mbt.png">
+                    </div>
+
+                    <div>
+                        <h4 class="mb-2">Make it yours with official Bootstrap Themes</h4>
+                        <p>Take Bootstrap to the next level with premium themes from the official Bootstrap Themes
+                            marketplace. Themes are built on Bootstrap as their own extended frameworks, rich with new
+                            components and plugins, documentation, and powerful build tools.
+                        </p>
+
+                        <a href="#" class="fs-5">Get Browse Bootstrap Themes<span
+                                class="bi bi-arrow-right ms-2 fs-5"></span></a>
+                    </div>
+                </div>
+
+                <!-- image -->
+                <div class="boot-image-big">
+                    <img src="images/bootstrap-themesimge.png">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- End Main -->
+
+    <!-- footer -->
+    <footer class=" text-white">
+        <div class="footer-body-main container-fluid">
+            <div class="footer-main row fw-semibold">
+                <!-- grid column1  -->
+                <div class="col main-logo-footer">
+                    <div class="logo-footer">
+                        <img src="images/bootsrap2.png" height="50px" width="50px">
+                        <span>Bootstrap</span>
+                    </div>
+                    <p class="mt-2">
+                        Designed and built with all the love in the world by the Bootstrap team with the help of our
+                        contributors.
+                    </p>
+
+                    <div>
+                        <p>Code licensed MIT, docs CC BY 3.0.</p>
+                        <p>Currently v5.3.3.</p>
+                    </div>
+                </div>
+
+
+                <!-- grid column2 -->
+                <div class="col grid-column-2">
+                    <ul class="list-unstyled">
+                        <strong>
+                            <li>Links</li>
+                        </strong>
+                        <li><a href="#" class="text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-decoration-none">Docs</a></li>
+                        <li><a href="#" class="text-decoration-none">Example</a></li>
+                        <li><a href="#" class="text-decoration-none">Icons</a></li>
+                        <li><a href="#" class="text-decoration-none">Themes</a></li>
+                        <li><a href="#" class="text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- grid column3 -->
+                <div class="col grid-column-2">
+                    <ul class="list-unstyled">
+                        <strong>
+                            <li>Guides</li>
+                        </strong>
+                        <li><a href="#" class="text-decoration-none">Getting started</a></li>
+                        <li><a href="#" class="text-decoration-none">Starter template</a></li>
+                        <li><a href="#" class="text-decoration-none">Webpack</a></li>
+                        <li><a href="#" class="text-decoration-none">Parcel</a></li>
+                        <li><a href="#" class="text-decoration-none">Vite</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- grid column4 -->
+                <div class="col grid-column-2">
+                    <ul class="list-unstyled">
+                        <strong>
+                            <li>Community</li>
+                        </strong>
+                        <li><a href="#" class="text-decoration-none">Issues</a></li>
+                        <li><a href="#" class="text-decoration-none">Discussions</a></li>
+                        <li><a href="#" class="text-decoration-none">Corporate sponsors</a></li>
+                        <li><a href="#" class="text-decoration-none">Open Collective</a></li>
+                        <li><a href="#" class="text-decoration-none">Stack Overflow</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        // theme.js
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Check localStorage for a saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.classList.add(savedTheme);
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('theme-dark')) {
+                body.classList.remove('theme-dark');
+                localStorage.setItem('theme', '');
+            } else {
+                body.classList.add('theme-dark');
+                localStorage.setItem('theme', 'theme-dark');
+            }
+        });
+
+    </script>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

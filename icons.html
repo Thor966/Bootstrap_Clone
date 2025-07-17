@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="icon" type="image/png" sizes="32x32"  href="images/Bootstrap logo title.png">
+</head>
+
+<body class="bg-dark text-white">
+
+    <!-- Navbar -->
+    <div class="main container-fluid">
+        <div class=" header" style="z-index: 1030;">
+            <nav class="navbar navbar-expand-lg navbar2 container-fluid">
+                <div class="container-fluid">
+
+                    <div class="navbar-toggler border-0">
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#mobile-offcanvas">
+                            <span class="bi bi-three-dots text-white"></span>
+                        </button>
+                        <a class="bi bi-search text-decoration-none text-white-50 ms-4" data-bs-toggle="modal"
+                            data-bs-target="#search3"></a>
+                    </div>
+
+
+
+                    <div class="navbar-brand">
+                        <a href="index.html" class="main-bootsrap-logo">
+                            <img src="images/bootsrap2.png" alt="Logo" width="40" height="40" class="img">
+                        </a>
+                    </div>
+
+
+                    <div class="navbar-collapse collapse" id="menu">
+                        <ul class="navbar-nav list-unstyled me-auto mb-2 mb-lg-0" navname">
+                            <li class="nav-item"><a href="docs.html" class="nav-link text-white">Docs</a></li>
+                            <li class="nav-item"><a href="examples.html" class="nav-link text-white">Examples</a></li>
+                            <li class="nav-item"><a href="icons.html" class="nav-link text-white">Icons</a></li>
+                            <li class="nav-item"><a href="theme.html" class="nav-link text-white" target="_blank">Themes</a></li>
+                            <li class="nav-item"><a href="https://blog.getbootstrap.com/" class="nav-link text-white" target="_blank">Blog</a></li>
+                        </ul>
+
+                        <!-- Nav Icons -->
+                        <div class="d-flex justify-content-around">
+                            <div class="me-4">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-white">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-white">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-white">
+                                            <i class="bi bi-opencollective"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- divider -->
+
+                        <div class="dropdown mt-2">
+                            <a class="dropdown-toggle bi bi-moon-stars-fill text-white text-decoration-none"
+                                data-bs-toggle="dropdown"></a>
+
+                            <ul class="dropdown-menu list-unstyled bg-dark">
+                                <li>
+                                    <a class="dropdown-item text-white text-decoration-none" href="#">
+                                        <i class="bi bi-sun-fill me-2"></i> Light
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-white text-decoration-none" href="#">
+                                        <i class="bi bi-moon-stars-fill me-2"></i> Dark
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-white text-decoration-none" href="#">
+                                        <i class="bi bi-circle-half me-2"></i> Auto
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <!-- boot-mobile-offcanvas  -->
+    <div class="offcanvas offcanvas-start boot-mobile-offcanvas" tabindex="-1" id="mobile-offcanvas">
+        <div class="offcanvas-header mb-4">
+            <h2 class="text-white">Bootstrap</h2>
+            <button class="btn btn-close" data-bs-dismiss="offcanvas" data-bs-target="#mobile-offcanvas"></button>
+        </div>
+        <!-- border -->
+        <div class="border-bottom opacity-25"></div>
+        <!-- offcanvas body -->
+        <div class="offcanvas-body">
+            <!-- offcanvas content1 -->
+            <ul class="list-unstyled boot-mobile-offcanvas-ul1 mb-4">
+                <li><a href="#" class="text-white text-decoration-none">Docs</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Examples</a></li>
+                <li><a href="#" class="text-white text-decoration-none">icons</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Themes</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Blogs</a></li>
+            </ul>
+            <!-- border -->
+            <div class="border-bottom opacity-25"></div>
+
+            <!-- offcanvas content2 -->
+            <ul class="list-unstyled boot-mobile-offcanvas-ul1 mb-4">
+                <li><a href="#" class="text-white text-decoration-none bi bi-github"><span
+                            class="ms-3">GitHub</span></a></li>
+                <li><a href="#" class="text-white text-decoration-none bi bi-twitter-x"><span
+                            class="ms-3">Twitter</span></a></li>
+                <li><a href="#" class="text-white text-decoration-none bi bi-opencollective"><span class="ms-3">Open
+                            Collective</span></a></li>
+            </ul>
+
+            <!-- border -->
+            <div class="border-bottom opacity-25"></div>
+
+            <!-- offcanvas content3 -->
+            <div class="dropdown me-4 mt-4 mb-4">
+                <span class="me-3 text-white">Bootstrap</span>
+                <a class="dropdown-toggle text-decoration-none text-white" data-bs-toggle="dropdown">v5.3</a>
+
+
+                <ul class="list-unstyled dropdown-menu bg-dark  dropdown-center">
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white disabled">v5
+                                releases</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">Latest(5.3.x)</a></span>
+                    </li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v5.2.3</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v5.1.3</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v.5.0.2</a></span>
+                    </li>
+                    <li class="dropdown-divider-"></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v4.6.x</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v3.4.1</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v2.3.2</a></span></li>
+                    <li class="dropdown-divider"></li>
+                    <li><span class="dropdown-item-text"><a class="dropdown-item text-decoration-none text-white">All
+                                Versions</a></span>
+                    </li>
+                </ul>
+            </div>
+            <!-- border -->
+            <div class="border-bottom opacity-25"></div>
+
+            <!-- offcanvas content4 -->
+            <div class="dropdown  mt-4 mb-4" id="theme">
+
+                <a class="dropdown-toggle bi bi-moon-stars-fill text-white text-decoration-none"
+                    data-bs-toggle="dropdown" data-bs-target="#theme">
+                    <span class="text-white ms-2">Toggle theme</span>
+                </a>
+
+
+                <ul class="dropdown-menu list-unstyled bg-dark">
+                    <li>
+                        <a class="dropdown-item text-white text-decoration-none" href="#">
+                            <i class="bi bi-sun-fill me-2"></i> Light
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item text-white text-decoration-none" href="#">
+                            <i class="bi bi-moon-stars-fill me-2"></i> Dark
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item text-white text-decoration-none" href="#">
+                            <i class="bi bi-circle-half me-2"></i> Auto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <main>
+        <div>
+            <!-- Alert -->
+            <div class="alert alert-primary text-center rounded rounded-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert-heading">New in v1.11.0: 100 new icons!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Start -->
+        <div class="pwb-main mt-5">
+            <div class="pwb">
+                <div>
+                    <h4 class="mb-2">Bootstrap Icons</h4>
+                    <p>Free, high quality, open source icon library with over 2,000 icons. Include them anyway you
+                        like—SVGs, SVG sprite, or web fonts. Use them with or without Bootstrap in any project.</p>
+
+                    <a href="#" class="fs-5">Get Bootstrap Icons<span class="bi bi-arrow-right ms-2 fs-5"></span></a>
+                </div>
+            </div>
+
+            <!-- Image -->
+            <div class="boot-image-big">
+                <img src="images/icons-heroimg.png" alt="Bootstrap Icons">
+            </div>
+        </div>
+        <!-- End -->
+
+        <div class="d-flex align-items-center">
+            <div class="iconimag">
+                <img src="images/iconimg.png" alt="Icon Image">
+            </div>
+
+            <div class="iconbtn d-flex justify-content-center align-items-center ms-3">
+                <a href="#" class="text-decoration-none text-center"> Open in Figma </a>
+            </div>
+        </div>
+
+        <!-- divider -->
+        <div class="border mt-5 mb-5 opacity-25"></div>
+
+
+
+        <!-- Icons -->
+        <div class="container my-auto">
+            <h1 class="text-start mb-4 text-white">Icons</h1>
+            <div class="row g-3" id="icon-gallery">
+                <!-- Icons will be dynamically added here -->
+            </div>
+        </div>
+        <!-- End -->
+
+
+        <!-- start install -->
+        <div class="install-main mt-5">
+            <div class="sub-im">
+                <h4>Install</h4>
+                <p>Bootstrap Icons are published to npm, but they can also be manually downloaded if needed.</p>
+            </div>
+
+
+            <div class="pdc mt-3">
+                <!-- package manager -->
+                <div class="pm">
+                    <h4>Package manager</h4>
+                    <p>Install <a href="#">Bootstrap Icons</a>—including SVGs, icon sprite, and icon fonts—with npm or
+                        Composer. Then,
+                        choose how you’d like to include the icons with the <a href="#">usage instructions</a>.
+                    </p>
+
+                    <div class="pm-img">
+                        <img src="images/pm-img1.png" class="mb-2">
+                        <img src="images/pm-img2.png">
+                    </div>
+
+                </div>
+                <!-- Download  -->
+                <div class="dwn">
+                    <h4>Download</h4>
+                    <p><a href="#">Releases are published on GitHub</a> and include icon SVGs, fonts, license, and
+                        readme. Our
+                        package.json is also included, though our npm scripts are primarily available for our
+                        development workflows.
+                    </p>
+
+                    <!-- button -->
+                    <div class="dwn-btn">
+                        <button class="btn btn-outline-primary">Download latest ZIP</button>
+                    </div>
+                </div>
+
+                <!-- CDN -->
+                <div class="cdn">
+                    <h4>CDN</h4>
+                    <p>Include the icon fonts stylesheet—in your website
+
+                        <span class="font-color">&lt;head&gt;</span> or via <span class="font-color">@import</span> in
+                        CSS—from jsDelivr and get started in seconds. <a href="#">See
+                            icon font docs</a>
+                        for
+                        examples.
+                    </p>
+
+                    <div class="cdn-img">
+                        <img src="images/cdn-img1.png" class="mb-2">
+                        <img src="images/cdn-img2.png">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- End install -->
+
+
+        <!-- start usage -->
+        <div class="usage-main mt-5">
+            <div class="sub-usage">
+                <h4>Usage</h4>
+                <p>Bootstrap Icons are SVGs, so you can include them into your HTML in a few ways depending on how your
+                    project is setup. We recommend using a <span class="font-color">width: 1em </span>(and
+                    optionally <span class="font-color">height: 1em</span>) for easy resizing via
+                    <span class="font-color">font-size.</span>
+                </p>
+            </div>
+
+            <!-- embedded -->
+            <div class="emd row my-5">
+                <div class="col-md-4">
+                    <h4>Embedded</h4>
+                    <p>Embed your icons within the HTML of your page (as opposed to an external image file). Here we’ve
+                        used a custom <span class="font-color">width</span> and <span class="font-color">height.</span>
+                    </p>
+                </div>
+
+                <div class="col-md-8 emd-img">
+                    <img src="images/embeded-img.png">
+                </div>
+            </div>
+
+            <!-- sprite -->
+            <div class="emd row my-5">
+                <div class="col-md-4">
+                    <h4>Sprite</h4>
+                    <p>Use the SVG sprite to insert any icon through the <span class="font-color">&lt;use&gt;</span>
+                        element. Use the icon’s filename as
+                        the
+                        fragment identifier (e.g., <span class="font-color"">toggles</span> is <span
+                        class=" font-color">#toggles</span>). SVG sprites allow you to reference an
+                        external file similar to an <span class="font-color">&lt;img&gt;</span> element, but with
+                        the power of <span class="font-color">currentColor</span> for easy
+                        theming.
+                    </p>
+                    <p>Heads up! There’s an issue with Chrome where<a href="#"> &lt;use&gt; doesn’t work across
+                            domains.</a></p>
+                </div>
+
+                <div class="col-md-8 emd-img">
+                    <img src="images/sprite-img.png">
+                </div>
+            </div>
+
+
+            <!-- External image -->
+            <div class="emd row my-5">
+                <div class="col-md-4">
+                    <h4>External image</h4>
+                    <p>Copy the Bootstrap Icons SVGs to your directory of choice and reference them like normal images
+                        with the <span class="font-color">&lt;img&gt;</span> element.
+                    </p>
+                </div>
+
+                <div class="col-md-8 emd-img">
+                    <img src="images/Ei-image.png">
+                </div>
+            </div>
+
+            <!-- Icon font -->
+            <div class="emd row my-5">
+                <div class="col-md-4">
+                    <h4>Icon font</h4>
+                    <p>Icon fonts with classes for every icon are also included for Bootstrap Icons. Include the icon
+                        web fonts in your page via CSS, then reference the class names as needed in your HTML
+                        (e.g.,<span class="font-color"> &lt;i
+                            class="bi-alarm-clock"&gt;&lt;/i&gt;</span>).
+                    </p>
+                    <p>Use <span class="font-color">font-size</span> and <span class="font-color">color</span> to change
+                        the icon appearance.</p>
+                </div>
+
+                <div class="col-md-8 emd-img">
+                    <img src="images/iconfont-img.png">
+                </div>
+            </div>
+
+
+            <!-- CSS -->
+            <div class="emd row my-5">
+                <div class="col-md-4">
+                    <h4>CSS</h4>
+                    <p>You can also use the SVG within your CSS (be sure to escape any characters, such as<span
+                            class="font-color">#</span> to <span class="font-color">%23</span> when
+                        specifying hex color values). When no dimensions are specified via <span
+                            class="font-color">width</span> and <span class="font-color">height</span> on the
+                        <span class="font-color">&lt;svg&gt;</span>, the icon will fill the available space.
+                    </p>
+                    <p>The <span class="font-color">viewBox</span> attribute is required if you wish to resize icons
+                        with <span class="font-color">background-size</span>. Note that the
+                        <span class="font-color">xmlns</span> attribute is required.
+                    </p>
+                </div>
+
+                <div class="col-md-8 emd-img">
+                    <img src="images/css-img.png">
+                </div>
+            </div>
+
+
+            <!-- Styling -->
+            <div class="emd row my-5">
+                <div class="col-md-4">
+                    <h4>Styling</h4>
+                    <p>Color can be changed by setting a <span class="font-color">.text-*</span> class or custom CSS:
+                    </p>
+                </div>
+
+                <div class="col-md-8 emd-img">
+                    <img src="images/style-img.png">
+                </div>
+            </div>
+
+
+            <!-- Accessibility -->
+            <div class="emd row my-5">
+                <div class="col-md-4">
+                    <h4>Accessibility</h4>
+                    <p>For purely decorative icons, add <span class="font-color">aria-hidden="true"</span>. Otherwise,
+                        provide an appropriate text
+                        alternative. Depending on which method you’re using to add the icons, and where you’re using
+                        them (e.g. as standalone images, or as the only content of a button or similar control), there
+                        are various possible approaches. Here are a few examples:
+
+                    </p>
+                </div>
+
+                <div class="col-md-8 emd-img">
+                    <img src="images/accessibility-img1.png">
+                    <img src="images/accessibility-img2.png">
+                </div>
+            </div>
+
+
+            <!-- Working with SVGs -->
+            <div class="emd row my-5">
+                <div class="col-md-4">
+                    <h4>Working with SVGs</h4>
+                    <p>SVGs are awesome to work with, but they do have some known quirks to work around. Given the
+                        numerous ways in which SVGs can be used, we haven’t included these attributes and workarounds in
+                        our code.
+
+                    </p>
+                </div>
+
+                <div class="col-md-8 emd2">
+                    <h6>Known issues include:</h6>
+
+                    <ul>
+                        <li class="mb-3"><b>SVGs receive focus by default in Internet Explorer and Edge Legacy.</b> When
+                            embedding
+                            your
+                            SVGs, add <span class="font-color">focusable="false"</span> to the <span
+                                class="font-color">&lt;svg&gt;</span> element. <a href="#">Learn more on Stack
+                                Overflow.</a>
+                        </li>
+
+                        <li class="mb-3"> <b>When using SVGs with <span class="font-color">&lt;img&gt;</span> elements,
+                                screen readers may not announce them as images, or skip
+                                the image completely.</b> Include an additional <span
+                                class="font-color">role="img"</span> on the <span class="font-color">&lt;img&gt;</span>
+                            element to avoid any
+                            issues. <a href="#">See this article for details.</a>
+                        </li>
+
+                        <li class="mb-3"><b>External SVG sprites may not function correctly in Internet Explorer.</b>
+                            Use the <a href="#">svg4everybody</a> polyfill as needed.
+                        </li>
+                    </ul>
+                    <span>Found another issue with SVGs we should note? Please open <a href="#">an issue</a> to share
+                        details.</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- End main method -->
+
+
+
+
+
+    <!-- footer -->
+    <footer class=" text-white">
+        <div class="footer-body-main container-fluid">
+            <div class="footer-main row fw-semibold">
+                <!-- grid column1  -->
+                <div class="col main-logo-footer">
+                    <div class="logo-footer">
+                        <img src="images/bootsrap2.png" height="50px" width="50px">
+                        <span>Bootstrap</span>
+                    </div>
+                    <p class="mt-2">
+                        Designed and built with all the love in the world by the Bootstrap team with the help of our
+                        contributors.
+                    </p>
+
+                    <div>
+                        <p>Code licensed MIT, docs CC BY 3.0.</p>
+                        <p>Currently v5.3.3.</p>
+                    </div>
+                </div>
+
+
+                <!-- grid column2 -->
+                <div class="col grid-column-2">
+                    <ul class="list-unstyled">
+                        <strong>
+                            <li>Links</li>
+                        </strong>
+                        <li><a href="#" class="text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-decoration-none">Docs</a></li>
+                        <li><a href="#" class="text-decoration-none">Example</a></li>
+                        <li><a href="#" class="text-decoration-none">Icons</a></li>
+                        <li><a href="#" class="text-decoration-none">Themes</a></li>
+                        <li><a href="#" class="text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- grid column3 -->
+                <div class="col grid-column-2">
+                    <ul class="list-unstyled">
+                        <strong>
+                            <li>Guides</li>
+                        </strong>
+                        <li><a href="#" class="text-decoration-none">Getting started</a></li>
+                        <li><a href="#" class="text-decoration-none">Starter template</a></li>
+                        <li><a href="#" class="text-decoration-none">Webpack</a></li>
+                        <li><a href="#" class="text-decoration-none">Parcel</a></li>
+                        <li><a href="#" class="text-decoration-none">Vite</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- grid column4 -->
+                <div class="col grid-column-2">
+                    <ul class="list-unstyled">
+                        <strong>
+                            <li>Community</li>
+                        </strong>
+                        <li><a href="#" class="text-decoration-none">Issues</a></li>
+                        <li><a href="#" class="text-decoration-none">Discussions</a></li>
+                        <li><a href="#" class="text-decoration-none">Corporate sponsors</a></li>
+                        <li><a href="#" class="text-decoration-none">Open Collective</a></li>
+                        <li><a href="#" class="text-decoration-none">Stack Overflow</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        // List of all Bootstrap icons (trimmed for brevity; replace with full list from Bootstrap Icons)
+        const iconClasses = [
+            "alarm", "battery-full", "chat-dots", "emoji-smile", "cloud", "house", "camera", "gear", "heart", "bookmark",
+            "accessibility", "airplane-engines", "apple", "archive", "award", "bar-chart", "bell", "book", "brightness-high",
+            "calculator", "calendar", "camera-reels", "caret-down", "check-circle", "check-square", "circle", "cloud-sun",
+            "cloud-drizzle", "cloud-rain", "cloud-lightning", "cloud-snow", "clouds", "code-slash", "credit-card", "diamond",
+            "download", "exclamation-circle", "eye", "file-earmark", "folder", "folder2", "github", "git", "globe", "heart-fill",
+            "heart-half", "info-circle", "info", "inbox", "instagram", "keyboard", "lightning", "lock", "moon", "music-note",
+            "people", "pencil", "person", "pie-chart", "pin", "play", "play-circle", "printer", "search", "shield", "shopping-bag",
+            "shopping-cart", "star", "sun", "sync", "trash", "twitter", "unlock", "volume-up", "volume-down", "volume-mute", "wallet",
+            "wifi", "x-circle", "youtube", "zoom-in", "zoom-out", "cloud-upload", "cloud-download", "link", "clipboard", "box",
+            "house-door", "diamond-fill", "check2-circle", "chat", "cart-check", "arrow-up", "arrow-down", "arrow-left", "arrow-right",
+            "archive-fill", "file-earmark-text", "file-lock", "download-cloud", "file-pdf", "flag", "flame", "shield-lock", "tablet",
+            "gift", "grid", "raster", "pin-map", "bookmark-check", "calendar-week", "chat-square", "person-fill", "camera-fill",
+            "box-arrow-left", "cloud-upload-fill", "flag-fill", "heart-fill", "file-earmark-code", "credit-card-fill", "check2-square",
+            "file-earmark-image", "file-earmark-video", "calculator-fill", "cash-stack", "gift-fill", "person-lines-fill", "calendar-check",
+            "cart-x", "shield-shaded", "signpost", "signpost-split", "tree", "tree-fill", "bar-chart-fill", "bank", "arrow-up-circle",
+            "arrow-down-circle", "arrow-left-circle", "arrow-right-circle", "tags", "tags-fill", "folder-lock", "folder-open",
+            "folder-fill", "person-circle", "alarm-fill", "archive-fill", "award-fill", "calendar-event", "calendar-check-fill",
+            "camera-reels-fill", "cloud-moon", "cloud-moon-rain", "cloud-sun-fill", "cloud-rain-fill", "cloud-lightning-fill",
+            "cloud-snow-fill", "clouds-fill", "clock", "pin-map-fill", "cloud-download-fill", "cloud-upload-alt", "cloud-moon-fill",
+            "cloud-rain-heavy", "moon-fill", "check2-circle-fill", "camera-fill", "circle-fill", "file-earmark-text-fill", "shield-x",
+            "pause-circle", "pause-circle-fill", "play-fill", "play-circle-fill", "cloud-drizzle-fill", "sun-fill", "download-fill",
+            "file-earmark-arrow-up", "file-earmark-arrow-down", "tree-fill", "tree-plant", "envelope-check", "cloud-sun-fill",
+            "cart-plus", "chat-right-dots", "book-fill", "printer-fill", "envelope-open", "file-earmark-lock", "check-all", "file-earmark-lock-fill",
+            "file-earmark-check", "folder-check", "flask", "recycle", "pen-fill", "camera-reels", "cloud-lightning", "clipboard-check",
+            "person-badge", "file-earmark-text", "gift-fill", "flame-fill", "grid-fill", "list-check", "key-fill", "list-ul", "list-ol",
+            "star-fill", "moon-stars", "clouds-sun", "newspaper", "clipboard-heart", "file-earmark-word", "calendar-month", "gear-fill", "123", "activity",
+            "add", "airplane", "alarm", "alt", "app", "app-indicator", "arrow-bar-down", "arrow-bar-left", "arrow-bar-right", "arrow-bar-up", "arrow-clockwise",
+            "arrow-counterclockwise", "arrow-down", "arrow-left", "arrow-right", "arrow-up", "arrows-angle-contract", "arrows-angle-expand", "arrows-collapse",
+            "arrows-expand", "at", "award", "back", "backspace", "balloon", "bank", "battery", "battery-charging", "battery-half", "bell", "bell-fill", "bell-slash",
+            "bell-slash-fill", "bezier", "block", "book", "bookmark", "bookmark-check", "bookmark-fill", "bookmark-heart", "bookmark-heart-fill", "bookshelf", "box",
+            "box-arrow-down", "box-arrow-left", "box-arrow-right", "box-arrow-up", "braces", "briefcase", "brightness-high", "brightness-low", "brightness-medium", "brush",
+            "bug", "bullseye", "calculator", "calendar", "calendar-check", "calendar-check-fill", "calendar-event", "calendar-fill", "calendar-month", "calendar-week", "camera",
+            "camera-fill", "camera-reels", "camera-reels-fill", "capslock", "cart", "cart-check", "cart-fill", "cart-plus", "cart-x", "caret-down", "caret-left", "caret-right",
+            "caret-up", "cart-plus-fill", "chat", "chat-dots", "chat-left", "chat-left-dots", "chat-left-fill", "chat-right", "chat-right-dots", "chat-right-fill", "check", "check-all",
+            "check-circle", "check-circle-fill", "check-lg", "check-square", "check-square-fill", "chevron-bar-down", "chevron-bar-left", "chevron-bar-right", "chevron-bar-up", "chevron-down",
+            "chevron-left", "chevron-right", "chevron-up", "circle", "circle-fill", "clipboard", "clipboard-check", "clipboard-data", "clipboard-minus", "clipboard-plus", "clipboard-x", "clock",
+            "cloud", "cloud-fill", "cloud-moon", "cloud-moon-fill", "cloud-rain", "cloud-rain-fill", "cloud-slash", "cloud-slash-fill", "cloud-sun", "cloud-sun-fill", "cloud-upload", "cloud-upload-fill",
+            "code", "code-slash", "coffee", "coin", "collection", "color-palette", "columns", "command", "compass", "compress", "compress-arrows-alt", "copy", "credit-card", "credit-card-fill", "crop", "cup",
+            "cursor", "dash", "dash-circle", "dash-circle-fill", "database", "desktop", "device-airplane", "device-cpu", "device-desktop", "device-hdd", "device-laptop", "device-laptop-fill", "device-phone",
+            "device-phone-fill", "device-tablet", "device-tablet-fill", "diamond", "dice", "dice-1", "dice-2", "dice-3", "dice-4", "dice-5", "dice-6", "disk", "display", "document", "document-arrow-down",
+            "document-arrow-up", "document-check", "document-code", "document-dash", "document-download", "document-fill", "document-fill-excel", "document-fill-image", "document-fill-pdf", "document-fill-play",
+            "document-fill-word", "document-lock", "document-locked", "document-minus", "document-plus", "document-split", "document-text", "document-x", "download", "download-cloud", "dropbox", "envelope", "envelope-check",
+            "envelope-fill", "envelope-open", "envelope-open-fill", "exclamation", "exclamation-circle", "exclamation-diamond", "exclamation-lg", "exclamation-octagon", "exclamation-triangle", "file", "file-arrow-down", "file-arrow-up",
+            "file-earmark", "file-earmark-arrow-down", "file-earmark-arrow-up", "file-earmark-check", "file-earmark-code", "file-earmark-earmark-text", "file-earmark-excel", "file-earmark-fill", "file-earmark-font", "file-earmark-lock",
+            "file-earmark-lock-fill", "file-earmark-lock-text", "file-earmark-minus", "file-earmark-music", "file-earmark-pdf", "file-earmark-play", "file-earmark-text", "file-earmark-video", "file-earmark-word", "file-earmark-x",
+            "file-lock", "file-lock-fill", "file-plus", "file-symlink", "file-x", "folder", "folder-check", "folder-fill", "folder-lock", "folder-lock-fill", "folder-minus", "folder-open", "folder-plus", "folder-symlink", "folder-x",
+            "forward", "forward-fill", "fullscreen", "fullscreen-exit", "gift", "gift-fill", "gear", "gear-fill", "globe", "globe-fill", "globe-stand", "google", "grid", "grid-fill", "heart", "heart-fill", "heart-half", "heart-half-fill",
+            "house", "house-door", "house-door-fill", "house-fill", "image", "image-alt", "inbox", "info", "info-circle", "infinity", "input-cursor", "input-cursor-text", "instagram", "key", "key-fill", "keyboard", "laptop", "layout",
+            "layout-sidebar", "layout-sidebar-inset", "layout-split", "lightbulb", "lightbulb-fill", "link", "lock", "lock-fill", "map", "map-fill", "map-marker", "map-marker-alt", "map-marker-alt-fill", "map-marker-fill", "map-pin",
+            "map-pin-fill", "megaphone", "megaphone-fill", "moon", "moon-fill", "music-note", "music-note-beamed", "newspaper", "node", "nut", "people", "person", "person-fill", "person-lines-fill", "person-square", "pin", "pin-fill",
+            "play", "play-circle", "play-circle-fill", "plus", "plus-circle", "plus-circle-fill", "printer", "printer-fill", "question-circle", "question-lg", "question-octagon", "radio", "recycle", "reply", "reply-all", "rewind", "safe",
+            "safe-fill", "search", "shield", "shield-fill", "shield-lock", "shield-x", "skip-backward", "skip-forward", "sliders", "sliders-h", "smartphone", "square", "square-fill", "star", "star-fill", "star-half", "star-half-fill", "stop",
+            "stop-circle", "stop-circle-fill", "sun", "sun-fill", "sync", "table", "table-fill", "tablet", "tags", "tags-fill", "text", "text-align-center", "text-align-justify", "text-align-left", "text-align-right", "text-indent-left",
+            "text-indent-right", "text-wrap", "thumbs-up", "thumbs-up-fill", "tools", "tools-fill", "trash", "trash-fill", "trash-2", "triangle", "triangle-fill", "unlock", "unlock-fill", "upload", "upload-cloud", "upload-fill", "user", "user-check",
+            "user-circle", "user-minus", "user-plus", "user-x", "video", "volume-down", "volume-mute", "volume-up", "wallet", "wifi", "window", "window-dock", "window-sidebar", "window-stack", "wrench", "wrench-fill", "x", "x-circle", "x-circle-fill",
+            "x-diamond", "x-square", "youtube"
+
+        ];
+
+
+
+
+        const iconGallery = document.getElementById('icon-gallery');
+
+        iconClasses.forEach(icon => {
+            const col = document.createElement('div');
+            col.className = 'col';
+
+            const card = document.createElement('div');
+            card.className = 'icon-card';
+
+            const iconElement = document.createElement('i');
+            iconElement.className = `bi bi-${icon} icon`;
+
+            const caption = document.createElement('p');
+            caption.className = 'mt-2';
+            caption.textContent = `bi-${icon}`;
+
+            card.appendChild(iconElement);
+            card.appendChild(caption);
+            col.appendChild(card);
+            iconGallery.appendChild(col);
+        });
+    </script>
+</body>
+
+</html>

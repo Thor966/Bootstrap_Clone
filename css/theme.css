@@ -1,0 +1,298 @@
+body {
+
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+}
+
+/* Header */
+/* General Styling */
+.header {
+    width: 100%;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar2 li {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.auth {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .input-group {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .brand-name {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .input-group {
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    .brand-name {
+        font-size: 14px;
+    }
+}
+
+
+.main-section h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 88px;
+    color: rgb(39, 39, 39);
+}
+
+.main-section h5 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(131, 142, 149);
+}
+
+.main-section-btn {
+    font-size: 16px;
+    border: 1px solid #7952b3;
+    border-radius: 5px;
+    padding: 13px 27px;
+    background-color: #7952b3;
+    color: white;
+}
+
+.main-section-btn:hover {
+    background-color: #6e2dce;
+
+}
+
+.section {
+    margin: 60px 50px 0px 50px;
+}
+
+.theme-name h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(39, 39, 39);
+    line-height: 28px;
+}
+
+.theme-name p {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(131, 142, 149);
+    line-height: 23px;
+}
+
+.view-all {
+    position: absolute;
+    right: 20px;
+}
+
+.view-all a {
+    border: 1px solid #7952b3;
+    padding: 8px 18px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #7952b3;
+}
+
+.view-all a:hover {
+    background-color: #614092;
+    color: white;
+}
+
+.card-header {
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06);
+}
+
+.card-footer h5 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: rgb(52, 52, 52);
+}
+
+.live-preview {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    right: 14px;
+    bottom: 12px;
+    color: white;
+    background-color: #7952b3;
+    padding: 8px 18px;
+    border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.card-header:hover .live-preview {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-footer p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(52, 52, 52);
+}
+
+.currency {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(52, 52, 52);
+}
+@media (max-width: 768px) {
+    .main-section h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        padding: 10px;
+       
+    }
+}
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Base footer styles */
+footer {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.get-new h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    color: rgb(39, 39, 39);
+}
+
+.get-new p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(131, 142, 149);
+}
+
+.search-bar-footer input {
+    background-color: rgb(230, 233, 234);
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-bar-footer button {
+    width: 100%;
+    max-width: 120px;
+    background-color: #7952b3;
+}
+
+.search-bar-footer button:hover {
+    background-color: #6825cb;
+}
+
+.footer-text1 a {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(66, 73, 81);
+}
+
+.footer-text2 {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(66, 73, 81);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .footer-inner {
+        flex-direction: row;
+    }
+
+    .get-new h3 {
+        font-size: 16px;
+    }
+
+    .get-new p {
+        font-size: 12px;
+    }
+
+    .footer-text1 {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .search-bar-footer input {
+        width: 100%;
+    }
+
+    .search-bar-footer button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-inner {
+        padding: 0 10px;
+    }
+
+    .get-new h3 {
+        font-size: 14px;
+    }
+
+    .get-new p {
+        font-size: 11px;
+    }
+
+    .footer-text1 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-text2 {
+        text-align: center;
+    }
+}
+
+/* The end */

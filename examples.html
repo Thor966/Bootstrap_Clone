@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/example.css">
+    <link rel="icon" type="image/png" sizes="32x32"  href="images/Bootstrap logo title.png">
+</head>
+
+<body class="bg-dark text-white">
+
+    <!-- Navbar -->
+    <div class="main container-fluid">
+        <div class=" header" style="z-index: 1030;">
+            <nav class="navbar navbar-expand-lg navbar2 container-fluid">
+                <div class="container-fluid">
+
+                    <div class="navbar-toggler border-0">
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#mobile-offcanvas">
+                            <span class="bi bi-three-dots text-white"></span>
+                        </button>
+                        <a class="bi bi-search text-decoration-none text-white-50 ms-4" data-bs-toggle="modal"
+                            data-bs-target="#search3"></a>
+                    </div>
+
+
+
+                    <div class="navbar-brand">
+                        <a href="index.html" class="main-bootsrap-logo">
+                            <img src="images/bootsrap2.png" alt="Logo" width="40" height="40" class="img">
+                        </a>
+                    </div>
+
+
+                    <div class="navbar-collapse collapse" id="menu">
+                        <ul class="navbar-nav list-unstyled me-auto mb-2 mb-lg-0" navname">
+                            <li class="nav-item"><a href="docs.html" class="nav-link text-white">Docs</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-white">Examples</a></li>
+                            <li class="nav-item"><a href="icons.html" class="nav-link text-white">Icons</a></li>
+                            <li class="nav-item"><a href="theme.html" class="nav-link text-white" target="_blank">Themes</a></li>
+                            <li class="nav-item"><a href="https://blog.getbootstrap.com/" class="nav-link text-white" target="_blank">Blog</a></li>
+
+                            <li class="nav-item input-group search-main">
+                                <div class="search-bar">
+                                    <span class="search-icon">
+                                        <i class="bi bi-search"></i>
+                                    </span>
+                                    <input type="text" class="search-input" placeholder="Search" data-bs-toggle="modal"
+                                        data-bs-target="#search2">
+                                    <span class="shortcut-key">CTRL K</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Nav Icons -->
+                        <div class="d-flex justify-content-around">
+                            <div class="me-4">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-white">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-white">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-white">
+                                            <i class="bi bi-opencollective"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="dropdown me-4 mt-2">
+                            <span class="differentiate me-3"></span>
+                            <a class="dropdown-toggle text-decoration-none text-white"
+                                data-bs-toggle="dropdown">v5.3</a>
+                            <span class="differentiate ms-3"></span>
+
+                            <ul class="list-unstyled dropdown-menu bg-dark  dropdown-center">
+                                <li><span class="dropdown-item-text"><a
+                                            class="dropdown-item text-decoration-none text-white disabled">v5
+                                            releases</a></span></li>
+                                <li><span class="dropdown-item-text"><a
+                                            class="dropdown-item text-decoration-none text-white">Latest(5.3.x)</a></span>
+                                </li>
+                                <li><span class="dropdown-item-text"><a
+                                            class="dropdown-item text-decoration-none text-white">v5.2.3</a></span></li>
+                                <li><span class="dropdown-item-text"><a
+                                            class="dropdown-item text-decoration-none text-white">v5.1.3</a></span></li>
+                                <li><span class="dropdown-item-text"><a
+                                            class="dropdown-item text-decoration-none text-white">v.5.0.2</a></span>
+                                </li>
+                                <li class="dropdown-divider-"></li>
+                                <li><span class="dropdown-item-text"><a
+                                            class="dropdown-item text-decoration-none text-white">v4.6.x</a></span></li>
+                                <li><span class="dropdown-item-text"><a
+                                            class="dropdown-item text-decoration-none text-white">v3.4.1</a></span></li>
+                                <li><span class="dropdown-item-text"><a
+                                            class="dropdown-item text-decoration-none text-white">v2.3.2</a></span></li>
+                                <li class="dropdown-divider"></li>
+                                <li><span class="dropdown-item-text"><a
+                                            class="dropdown-item text-decoration-none text-white">All
+                                            Versions</a></span>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="dropdown mt-2">
+                            <a class="dropdown-toggle bi bi-moon-stars-fill text-white text-decoration-none"
+                                data-bs-toggle="dropdown"></a>
+
+                            <ul class="dropdown-menu list-unstyled bg-dark">
+                                <li>
+                                    <a class="dropdown-item text-white text-decoration-none" href="#">
+                                        <i class="bi bi-sun-fill me-2"></i> Light
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-white text-decoration-none" href="#">
+                                        <i class="bi bi-moon-stars-fill me-2"></i> Dark
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-white text-decoration-none" href="#">
+                                        <i class="bi bi-circle-half me-2"></i> Auto
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <!-- boot-mobile-offcanvas  -->
+    <div class="offcanvas offcanvas-start boot-mobile-offcanvas" tabindex="-1" id="mobile-offcanvas">
+        <div class="offcanvas-header mb-4">
+            <h2 class="text-white">Bootstrap</h2>
+            <button class="btn btn-close" data-bs-dismiss="offcanvas" data-bs-target="#mobile-offcanvas"></button>
+        </div>
+        <!-- border -->
+        <div class="border-bottom opacity-25"></div>
+        <!-- offcanvas body -->
+        <div class="offcanvas-body">
+            <!-- offcanvas content1 -->
+            <ul class="list-unstyled boot-mobile-offcanvas-ul1 mb-4">
+                <li><a href="#" class="text-white text-decoration-none">Docs</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Examples</a></li>
+                <li><a href="#" class="text-white text-decoration-none">icons</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Themes</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Blogs</a></li>
+            </ul>
+            <!-- border -->
+            <div class="border-bottom opacity-25"></div>
+
+            <!-- offcanvas content2 -->
+            <ul class="list-unstyled boot-mobile-offcanvas-ul1 mb-4">
+                <li><a href="#" class="text-white text-decoration-none bi bi-github"><span
+                            class="ms-3">GitHub</span></a></li>
+                <li><a href="#" class="text-white text-decoration-none bi bi-twitter-x"><span
+                            class="ms-3">Twitter</span></a></li>
+                <li><a href="#" class="text-white text-decoration-none bi bi-opencollective"><span class="ms-3">Open
+                            Collective</span></a></li>
+            </ul>
+
+            <!-- border -->
+            <div class="border-bottom opacity-25"></div>
+
+            <!-- offcanvas content3 -->
+            <div class="dropdown me-4 mt-4 mb-4">
+                <span class="me-3 text-white">Bootstrap</span>
+                <a class="dropdown-toggle text-decoration-none text-white" data-bs-toggle="dropdown">v5.3</a>
+
+
+                <ul class="list-unstyled dropdown-menu bg-dark  dropdown-center">
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white disabled">v5
+                                releases</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">Latest(5.3.x)</a></span>
+                    </li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v5.2.3</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v5.1.3</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v.5.0.2</a></span>
+                    </li>
+                    <li class="dropdown-divider-"></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v4.6.x</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v3.4.1</a></span></li>
+                    <li><span class="dropdown-item-text"><a
+                                class="dropdown-item text-decoration-none text-white">v2.3.2</a></span></li>
+                    <li class="dropdown-divider"></li>
+                    <li><span class="dropdown-item-text"><a class="dropdown-item text-decoration-none text-white">All
+                                Versions</a></span>
+                    </li>
+                </ul>
+            </div>
+            <!-- border -->
+            <div class="border-bottom opacity-25"></div>
+
+            <!-- offcanvas content4 -->
+            <div class="dropdown  mt-4 mb-4" id="theme">
+
+                <a class="dropdown-toggle bi bi-moon-stars-fill text-white text-decoration-none"
+                    data-bs-toggle="dropdown" data-bs-target="#theme">
+                    <span class="text-white ms-2">Toggle theme</span>
+                </a>
+
+
+                <ul class="dropdown-menu list-unstyled bg-dark">
+                    <li>
+                        <a class="dropdown-item text-white text-decoration-none" href="#">
+                            <i class="bi bi-sun-fill me-2"></i> Light
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item text-white text-decoration-none" href="#">
+                            <i class="bi bi-moon-stars-fill me-2"></i> Dark
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item text-white text-decoration-none" href="#">
+                            <i class="bi bi-circle-half me-2"></i> Auto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Search bar modal -->
+    <div class="modal fade" id="search2">
+        <div class=" modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark">
+                <div class="modal-header d-flex justify-content-center ">
+                    <div class="search-bar2 d-flex justify-content-center bg-black">
+                        <span class="search-icon2">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input type="text" class="search-input  bg-black" placeholder="Search">
+                    </div>
+
+                </div>
+
+                <div class="modal-body text-center align-center">
+                    <span class=" ">No recent searches</span>
+
+                    <div class="mt-5 foot text-center align-center">
+                        <div class="w-50 ">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li class="select"><span class="bi bi-arrow-return-left me-2"></span>to
+                                    select</li>
+                                <li class="select"><span class="bi bi-arrow-up me-1"></span><span
+                                        class="bi-arrow-down me-2"></span>to Nevigate</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Mobile search bar -->
+    <div class="modal fade" id="search3">
+        <div class=" modal-dialog modal-dialog-centered modal-fullscreen">
+            <div class="modal-content bg-dark">
+                <div class="modal-header d-flex justify-content-center ">
+                    <div class="search-bar2 d-flex justify-content-center bg-black ms-5">
+                        <span class="search-icon2">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input type="text" class="search-input  bg-black" placeholder="Search">
+
+                    </div>
+                    <button class="btn btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center align-center">
+                    <span class=" ">No recent searches</span>
+
+                    <div class="mt-5 foot text-center align-center">
+                        <div class="w-50 ">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li class="select"><span class="bi bi-arrow-return-left me-2"></span>to
+                                    select</li>
+                                <li class="select"><span class="bi bi-arrow-up me-1"></span><span
+                                        class="bi-arrow-down me-2"></span>to Nevigate</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- main -->
+    <main class="  bg-dark text-white">
+        <!-- Examples -->
+        <div class="w-75 example">
+            <h3 class="example-text">Examples</h3>
+            <p>Quickly get a project started with any of our examples ranging from using parts of the framework to
+                custom components and layouts.</p>
+
+            <!-- buttons -->
+            <div>
+                <button class="rounded rounded-2 ex-dw-btn1"><span class="bi bi-box-seam me-2"></span>Download
+                    examples</button>
+
+                <button class="rounded rounded-2 ex-dw-btn2">Download examples</button>
+            </div>
+        </div>
+        <!-- divider -->
+        <div class="divider opacity-50"></div>
+
+        <!-- starters -->
+        <div class="starter-main">
+            <div class="starter-heading">
+                <h3 class="starters-text">Starters</h3>
+                <p>Functional examples of using Bootstrap in common JS frameworks like Webpack, Parcel, Vite, and more
+                    you can edit in StackBlitz.</p>
+            </div>
+
+            <!-- starter-info -->
+            <div class="starter-info-main">
+
+                <div class="starter-info-sub w-100">
+                    <!-- 1st line -->
+                    <div class="info1 w-75  mt-3">
+                        <span class="bi bi-box-seam span1"><a href="#" class="ms-3">CDN Starter</a></span>
+                        <p>Instantly include Bootstrap's compiled CSS and JavaScript via the jsDelivr CDN.</p>
+                        <span class="info-footer">
+                            <i class="bi bi-lightning-charge-fill me-2"></i>
+                            <a href="#">Edit in StackBlitz</a>
+                        </span>
+                    </div>
+
+                    <div class="info1 w-75  mt-3">
+                        <span class="bi bi-box-seam span1"><a href="#" class="ms-3">Sass & JS</a></span>
+                        <p>Use npm to import and compile Bootstrap's Sass with Autoprefixer and Stylelint, plus our
+                            bundled JavaScript.</p>
+                        <span class="info-footer">
+                            <i class="bi bi-lightning-charge-fill me-2"></i>
+                            <a href="#">Edit in StackBlitz</a>
+                        </span>
+                    </div>
+
+                    <div class="info1 w-75  mt-3">
+                        <span class="bi bi-box-seam span1"><a href="#" class="ms-3">Sass & EMS JS</a></span>
+                        <p>Import and compile Bootstrap's Sass with Autoprefixer and Stylelint, and compile our source
+                            JavaScript with an ESM shim.</p>
+                        <span class="info-footer">
+                            <i class="bi bi-lightning-charge-fill me-2"></i>
+                            <a href="#">Edit in StackBlitz</a>
+                        </span>
+                    </div>
+
+                    <!-- 2nd line -->
+                    <div class="info1 w-75  mt-3">
+                        <span class="bi bi-box-seam span1"><a href="#" class="ms-3">Bootstrap color modes</a></span>
+                        <p>Import and compile Bootstrap's Sass with Stylelint, and the Bootstrap color modes.</p>
+                        <span class="info-footer">
+                            <i class="bi bi-lightning-charge-fill me-2"></i>
+                            <a href="#">Edit in StackBlitz</a>
+                        </span>
+                    </div>
+
+                    <div class="info1 w-75  mt-3">
+                        <span class="bi bi-box-seam span1"><a href="#" class="ms-3">Bootstrap Icons</a></span>
+                        <p>Import and compile Bootstrap's Sass with Stylelint, PurgeCSS, and the Bootstrap Icons web
+                            font.</p>
+                        <span class="info-footer">
+                            <i class="bi bi-lightning-charge-fill me-2"></i>
+                            <a href="#">Edit in StackBlitz</a>
+                        </span>
+                    </div>
+
+                    <div class="info1 w-75  mt-3">
+                        <span class="bi bi-box-seam span1"><a href="#" class="ms-3">Parcel</a></span>
+                        <p>Import and bundle Bootstrap's source Sass and JavaScript via Parcel.</p>
+                        <span class="info-footer">
+                            <i class="bi bi-lightning-charge-fill me-2"></i>
+                            <a href="#">Edit in StackBlitz</a>
+                        </span>
+                    </div>
+
+
+                    <!-- 3rd line -->
+                    <div class="info1 w-75 mt-3">
+                        <span class="bi bi-box-seam span1"><a href="#" class="ms-3">React</a></span>
+                        <p>Import and bundle Bootstrap's source Sass and JavaScript with React, Next.js, and React
+                            Bootstrap.</p>
+                        <span class="info-footer">
+                            <i class="bi bi-lightning-charge-fill me-2"></i>
+                            <a href="#">Edit in StackBlitz</a>
+                        </span>
+                    </div>
+
+                    <div class="info1 w-75  mt-3">
+                        <span class="bi bi-box-seam span1"><a href="#" class="ms-3">Vite</a></span>
+                        <p>Import and bundle Bootstrap's source Sass and JavaScript with Vite.</p>
+                        <span class="info-footer">
+                            <i class="bi bi-lightning-charge-fill me-2"></i>
+                            <a href="#">Edit in StackBlitz</a>
+                        </span>
+                    </div>
+
+                    <div class="info1 w-75  mt-3">
+                        <span class="bi bi-box-seam span1"><a href="#" class="ms-3">Vue</a></span>
+                        <p>Import and bundle Bootstrap's source Sass and JavaScript with Vue and Vite.</p>
+                        <span class="info-footer">
+                            <i class="bi bi-lightning-charge-fill me-2"></i>
+                            <a href="#">Edit in StackBlitz</a>
+                        </span>
+                    </div>
+
+                    <!-- 4th line -->
+                    <div class="info1 w-75  mt-3">
+                        <span class="bi bi-box-seam span1"><a href="#" class="ms-3">Webpack</a></span>
+                        <p>Import and bundle Bootstrap's source Sass and JavaScript with Webpack.</p>
+                        <span class="info-footer">
+                            <i class="bi bi-lightning-charge-fill me-2"></i>
+                            <a href="#">Edit in StackBlitz</a>
+                        </span>
+                    </div>
+
+                </div>
+                <!-- End starters -->
+            </div>
+        </div>
+
+        <!-- Snippets -->
+
+        <div class="snippets-main">
+            <div class="snippet-heading">
+                <h3>Snippets</h3>
+                <p>Common patterns for building sites and apps that build on existing components and utilities
+                    with custom CSS and more.</p>
+            </div>
+            <div class="snippets-sub">
+
+                <!-- 1st snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/headerscard.png" class="snippets-img p-1 rounded rounded-1" height="173px"
+                            width="240px">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Headers</a>
+                        <p>Display your branding, navigation, search, and more with these header components</p>
+                    </div>
+                </div>
+
+                <!-- 2nd snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/heroescard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Heros</a>
+                        <p>Set the stage on your homepage with heroes that feature clear calls to action.</p>
+                    </div>
+                </div>
+
+
+                <!-- 3rd snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/featurescard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Features</a>
+                        <p>Explain the features, benefits, or other details in your marketing content.</p>
+                    </div>
+                </div>
+
+                <!-- 4th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/sidebarscard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Sidebars</a>
+                        <p>Common navigation patterns ideal for offcanvas or multi-column layouts.</p>
+                    </div>
+                </div>
+
+
+                <!-- line 2 -->
+                <!-- 5th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/footerscard.png" class="snippets-img p-1 rounded rounded-1" height="173px"
+                            width="240px">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Footers</a>
+                        <p>Finish every page strong with an awesome footer, big or small.</p>
+                    </div>
+                </div>
+
+                <!-- 6th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/dropdowncard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Dropdowns</a>
+                        <p>Enhance your dropdowns with filters, icons, custom styles, and more.</p>
+                    </div>
+                </div>
+
+
+                <!-- 7th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/list-groupscard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">List groups</a>
+                        <p>Extend list groups with utilities and custom styles for any content.</p>
+                    </div>
+                </div>
+
+                <!-- 8th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/modalscard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Modals</a>
+                        <p>Transform modals to serve any purpose, from feature tours to dialogs.</p>
+                    </div>
+                </div>
+
+
+
+                <!-- line 3 -->
+                <!-- 9th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/badgecard.png" class="snippets-img p-1 rounded rounded-1" height="173px"
+                            width="240px">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Badges</a>
+                        <p>Make badges work with custom inner HTML and new looks.</p>
+                    </div>
+                </div>
+
+                <!-- 10th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/breadcrumbcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Breadcrumbs</a>
+                        <p>Integrate custom icons and create stepper components.</p>
+                    </div>
+                </div>
+
+
+                <!-- 11th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/buttonscard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Buttons</a>
+                        <p>Create custom buttons for just about any use case with utilities.</p>
+                    </div>
+                </div>
+
+                <!-- 12th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/jumbotronscard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Jumbotons</a>
+                        <p>Create modernized versions of the classic Bootstrap component.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End snippets -->
+
+        <!-- Custom Components -->
+        <div class="cus-comp-main">
+            <div class="cus-comp-heading">
+                <h3>Custom Components</h3>
+                <p>Brand-new components and templates to help folks quickly get started with Bootstrap and
+                    demonstrate best practices for adding onto the framework.</p>
+            </div>
+            <div class="cus-comp-sub">
+
+                <!-- 1st snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/albumcard.png" class="cus-comp-img p-1 rounded rounded-1" height="173px"
+                            width="240px">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Album</a>
+                        <p>Simple one-page template for photo galleries, portfolios, and more.</p>
+                    </div>
+                </div>
+
+                <!-- 2nd snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/pricingcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Pricing</a>
+                        <p>Example pricing page built with Cards and featuring a custom header and footer.</p>
+                    </div>
+                </div>
+
+
+                <!-- 3rd snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/checkoutcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Checkout</a>
+                        <p>Custom checkout form showing our form components and their validation features.</p>
+                    </div>
+                </div>
+
+                <!-- 4th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/productcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Product</a>
+                        <p>Lean product-focused marketing page with extensive grid and image work.</p>
+                    </div>
+                </div>
+
+
+                <!-- line 2 -->
+                <!-- 5th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/covercard.png" class="snippets-img p-1 rounded rounded-1" height="173px"
+                            width="240px">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Cover</a>
+                        <p>A one-page template for building simple and beautiful home pages.</p>
+                    </div>
+                </div>
+
+                <!-- 6th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/carouselcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Carousel</a>
+                        <p>Customize the navbar and carousel, then add some new components.</p>
+                    </div>
+                </div>
+
+
+                <!-- 7th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/blogcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Blog</a>
+                        <p>Magazine like blog template with header, navigation, featured content.</p>
+                    </div>
+                </div>
+
+                <!-- 8th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/dashboardcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Dashboard</a>
+                        <p>Basic admin dashboard shell with fixed sidebar and navbar.</p>
+                    </div>
+                </div>
+
+
+
+                <!-- line 3 -->
+                <!-- 9th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/sign-incard.png" class="snippets-img p-1 rounded rounded-1" height="173px"
+                            width="240px">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Sign-in</a>
+                        <p>Custom form layout and design for a simple sign in form.</p>
+                    </div>
+                </div>
+
+                <!-- 10th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/sticky-footercard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Sticky footer</a>
+                        <p>Attach a footer to the bottom of the viewport when page content is short.</p>
+                    </div>
+                </div>
+
+
+                <!-- 11th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/sticky-footer-navbarcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Sticky footer navbar</a>
+                        <p>Attach a footer to the bottom of the viewport with a fixed top navbar.
+
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 12th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/jumbotroncustomcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Jumboton</a>
+                        <p>Use utilities to recreate and enhance Bootstrap 4's jumbotron.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end custom componenets -->
+
+
+
+        <!-- Frameworks -->
+        <div class="cus-comp-main">
+            <div class="cus-comp-heading">
+                <h3>Framework</h3>
+                <p>Examples that focus on implementing uses of built-in components provided by Bootstrap</p>
+            </div>
+            <div class="cus-comp-sub">
+
+                <!-- 1st snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/starter-templatecard.png" class="cus-comp-img p-1 rounded rounded-1"
+                            height="173px" width="240px">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Starter template</a>
+                        <p>Nothing but the basics: compiled CSS and JavaScript.</p>
+                    </div>
+                </div>
+
+                <!-- 2nd snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/gridcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Grid</a>
+                        <p>Multiple examples of grid layouts with all four tiers, nesting, and more.</p>
+                    </div>
+                </div>
+
+
+                <!-- 3rd snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/cheatsheetcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Cheatsheet</a>
+                        <p>Kitchen sink of Bootstrap components.</p>
+                    </div>
+                </div>
+
+                <!-- 4th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/cheatsheet-rtlcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Cheatsheet RTL</a>
+                        <p>Kitchen sink of Bootstrap components, RTL.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End frameworks -->
+
+        <!-- start navbars -->
+        <div class="cus-comp-main">
+            <div class="cus-comp-heading">
+                <h3>Navbars</h3>
+                <p>Taking the default navbar component and showing how it can be moved, placed, and extended.</p>
+            </div>
+            <div class="cus-comp-sub">
+
+                <!-- 1st snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/navbarscard.png" class="cus-comp-img p-1 rounded rounded-1" height="173px"
+                            width="240px">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Navbars</a>
+                        <p>Demonstration of all responsive and container options for the navbar.</p>
+                    </div>
+                </div>
+
+                <!-- 2nd snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/navbars-offcanvascard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Navbars offcanvas</a>
+                        <p>Same as the Navbars example, but with our offcanvas component.</p>
+                    </div>
+                </div>
+
+
+                <!-- 3rd snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/navbar-staticcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Navbar static</a>
+                        <p>Single navbar example of a static top navbar along with some additional content.</p>
+                    </div>
+                </div>
+
+                <!-- 4th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/navbar-fixedcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Navbar fixed</a>
+                        <p>Single navbar example with a fixed top navbar along with some additional content.</p>
+                    </div>
+                </div>
+
+                <!-- 5th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/navbar-bottomcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Navbar bottom</a>
+                        <p>Single navbar example with a bottom navbar along with some additional content.</p>
+                    </div>
+                </div>
+
+                <!-- 6th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/offcanvas-navbarcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Offcanvas navbar</a>
+                        <p>Turn your expandable navbar into a sliding offcanvas menu (doesn't use our offcanvas
+                            component).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End navbars -->
+
+
+        <!-- Start RTL -->
+        <div class="cus-comp-main">
+            <div class="cus-comp-heading">
+                <h3>RTL</h3>
+                <p>See Bootstrap's RTL version in action with these modified Custom Components examples.</p>
+            </div>
+
+            <!-- alert -->
+            <div class="alert alert1 mt-1">
+                <div class="alert-heading ms-2">
+                    <p class="alert-heading">RTL is still experimental and will evolve with feedback. Spotted something
+                        or have an improvement to suggest?</p>
+                    <a href="#">Please open an issue.</a>
+                </div>
+            </div>
+
+
+            <div class="cus-comp-sub">
+
+                <!-- 1st snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/album-rtlcard.png" class="cus-comp-img p-1 rounded rounded-1" height="173px"
+                            width="240px">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Album RTL</a>
+                        <p>Simple one-page template for photo galleries, portfolios, and more.</p>
+                    </div>
+                </div>
+
+                <!-- 2nd snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/checkout-rtlcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Checkout RTL</a>
+                        <p>Custom checkout form showing our form components and their validation features.</p>
+                    </div>
+                </div>
+
+
+                <!-- 3rd snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/carousel-rtlcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Carousel RTL</a>
+                        <p>Customize the navbar and carousel, then add some new components.</p>
+                    </div>
+                </div>
+
+                <!-- 4th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/blog-rtlcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Blog RTL</a>
+                        <p>Magazine like blog template with header, navigation, featured content.</p>
+                    </div>
+                </div>
+
+                <!-- 5th snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/dashboard-rtlcard.png" class="snippets-img p-1 rounded rounded-1">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Dashboard RTL</a>
+                        <p>Basic admin dashboard shell with fixed sidebar and navbar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of RTL -->
+
+
+        <!-- start Integration  -->
+        <div class="cus-comp-main">
+            <div class="cus-comp-heading">
+                <h3>Integrations</h3>
+                <p>Integrations with external libraries.</p>
+            </div>
+
+
+
+            <div class="cus-comp-sub">
+
+                <!-- 1st snippets -->
+                <div class=" card1 bg-transparent">
+                    <div>
+                        <img src="images/masonrycard.png" class="cus-comp-img p-1 rounded rounded-1" height="173px"
+                            width="240px">
+                    </div>
+
+                    <div class="card-info mt-3">
+                        <a href="#">Masonry</a>
+                        <p>Combine the powers of the Bootstrap grid and the Masonry layout.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Integration -->
+
+        <!-- divider -->
+        <div class="divider opacity-50"></div>
+
+        <!-- Bootstrap Themes -->
+        <div>
+            <div class="main-theme mt-5 d-flex justify-content-center">
+                <div class="sub-theme text-center w-75">
+                    <div>
+                        <img src="images/Themes.png" height="64px" width="64px">
+                    </div>
+
+                    <div class="theme-text">
+                        <h3>Go further with Bootstrap Themes</h3>
+                        <p>Need something more than these examples? Take Bootstrap to the next level with premium themes
+                            from
+                            the <a href="#">official Bootstrap Themes marketplace.</a> They’re built as their own
+                            extended
+                            frameworks, rich with
+                            new components and plugins, documentation, and powerful build tools.</p>
+                    </div>
+
+                    <div class="theme-btn">
+                        <button class="btn btn-outline-primary p-2 ">Browse Themes</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- image -->
+            <div class="bootimg text-center mt-4">
+                <img src="images/bootstrap-themes-collageimg.png" alt="" height="311" width="1116">
+
+             </div>
+
+        </div>
+        <!-- End Themes -->
+
+        <!-- End main -->
+    </main>
+
+
+
+    <!-- footer -->
+    <footer class=" text-white">
+        <div class="footer-body-main container-fluid">
+            <div class="footer-main row fw-semibold">
+                <!-- grid column1  -->
+                <div class="col main-logo-footer">
+                    <div class="logo-footer">
+                        <img src="images/bootsrap2.png" height="50px" width="50px">
+                        <span>Bootstrap</span>
+                    </div>
+                    <p class="mt-2">
+                        Designed and built with all the love in the world by the Bootstrap team with the help of our
+                        contributors.
+                    </p>
+
+                    <div>
+                        <p>Code licensed MIT, docs CC BY 3.0.</p>
+                        <p>Currently v5.3.3.</p>
+                    </div>
+                </div>
+
+
+                <!-- grid column2 -->
+                <div class="col grid-column-2">
+                    <ul class="list-unstyled">
+                        <strong>
+                            <li>Links</li>
+                        </strong>
+                        <li><a href="#" class="text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-decoration-none">Docs</a></li>
+                        <li><a href="#" class="text-decoration-none">Example</a></li>
+                        <li><a href="#" class="text-decoration-none">Icons</a></li>
+                        <li><a href="#" class="text-decoration-none">Themes</a></li>
+                        <li><a href="#" class="text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- grid column3 -->
+                <div class="col grid-column-2">
+                    <ul class="list-unstyled">
+                        <strong>
+                            <li>Guides</li>
+                        </strong>
+                        <li><a href="#" class="text-decoration-none">Getting started</a></li>
+                        <li><a href="#" class="text-decoration-none">Starter template</a></li>
+                        <li><a href="#" class="text-decoration-none">Webpack</a></li>
+                        <li><a href="#" class="text-decoration-none">Parcel</a></li>
+                        <li><a href="#" class="text-decoration-none">Vite</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- grid column4 -->
+                <div class="col grid-column-2">
+                    <ul class="list-unstyled">
+                        <strong>
+                            <li>Community</li>
+                        </strong>
+                        <li><a href="#" class="text-decoration-none">Issues</a></li>
+                        <li><a href="#" class="text-decoration-none">Discussions</a></li>
+                        <li><a href="#" class="text-decoration-none">Corporate sponsors</a></li>
+                        <li><a href="#" class="text-decoration-none">Open Collective</a></li>
+                        <li><a href="#" class="text-decoration-none">Stack Overflow</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

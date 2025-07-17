@@ -1,0 +1,463 @@
+body {
+
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.header {
+    width: 98.5vw;
+    margin-left: -10px;
+}
+
+.main {
+    position: sticky;
+    top: 0;
+}
+
+.navbar2 {
+    background-color: rgb(132, 0, 255);
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 1030;
+}
+
+.main-bootsrap-logo img:hover {
+    transform: rotate(-7deg) scale(1.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+
+
+}
+
+.navname .nav-link {
+    color: rgb(255, 255, 255) !important;
+
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    border: 0.2px solid rgb(187, 181, 181);
+    border-radius: 8px;
+    background-color: transparent;
+    gap: 10px;
+    width: 300px;
+
+
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        flex-direction: column;
+        /* Stack items vertically */
+    }
+
+    .navbar-nav {
+        text-align: center;
+        /* Center-align items for smaller screens */
+    }
+
+    .nav-link {
+        padding: 10px;
+        /* Increase tappable area for links */
+    }
+
+    .search-main {
+        margin-top: 10px;
+    }
+}
+
+.search-bar:hover {
+
+    box-shadow: 0px 0px 0px 4px rgb(203, 176, 126);
+    transition: border 0.3s;
+    /* Smooth transition for the shadow */
+    cursor: pointer;
+}
+
+
+.search-bar2 {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 0.9rem;
+    border: 3px solid rgb(132, 0, 255);
+    border-radius: 8px;
+    background-color: transparent;
+    gap: 10px;
+    width: 600px;
+
+
+}
+
+.search-icon {
+    font-size: 1.2rem;
+    color: rgb(187, 181, 181)
+}
+
+.search-icon2 {
+    font-size: 19px;
+    font-weight: 400;
+    color: rgb(132, 0, 255);
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    color: rgb(187, 181, 181);
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-input2 {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    color: rgb(187, 181, 181);
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-input::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+/* .search-input2::placeholder {
+    color: white;
+    opacity: 0.7;
+    font-size: 19px;
+} */
+.search-input2::placeholder {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+}
+
+
+.shortcut-key {
+    padding: 0.2rem 0.5rem;
+    background-color: #4a1caf;
+    /* Dark purple background */
+    color: white;
+    border-radius: 5px;
+    font-size: 9px;
+    width: 46px;
+}
+
+.search-main {
+    margin-left: 110px;
+}
+
+.select {
+    font-size: 12px;
+    padding: 0.3rem 0.5rem;
+    font-weight: 400;
+    color: rgba(222, 226, 230, 0.75);
+    line-height: 19px;
+}
+
+.boot-mobile-offcanvas {
+    background-color: rgb(55, 48, 197);
+}
+
+.boot-mobile-offcanvas-ul1 {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    line-height: 45px;
+}
+
+.foot {
+    border-top: 0.4px solid white;
+    height: 25px;
+}
+
+.differentiate {
+    border-left: 0.5px solid white;
+    border-right: 0.5px solid white;
+}
+
+main {
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+.example-text {
+    font-size: 48px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    line-height: 58px;
+}
+
+.example p {
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(222, 226, 230);
+    line-height: 36px;
+
+}
+
+.ex-dw-btn1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 240px;
+    background-color: rgb(132, 0, 255);
+    border: 1px solid rgb(132, 0, 255);
+}
+.ex-dw-btn1:hover
+{
+    background-color: rgb(137, 26, 241);
+    color: white;
+    border: 1px solid rgb(132, 0, 255);
+}
+
+.ex-dw-btn2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    width: 240px;
+    background-color: transparent;
+    color: grey;
+    border: 1px solid grey;
+    margin-left: 20px;
+}
+.ex-dw-btn2:hover
+{
+    background-color: grey;
+    color: white;
+    border: 1px solid grey;
+}
+
+.divider {
+    border: 0.2px solid grey;
+    width: 100% !important;
+    margin-top: 80px;
+    margin-left: -30px;
+}
+
+.starter-main {
+    margin-top: 50px;
+}
+
+.starters-text {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    color: rgb(255, 255, 255);
+}
+
+.starter-heading p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(222, 226, 230);
+}
+
+.starter-info-main {
+    margin-top: 10px;
+}
+
+.starter-info-sub {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    gap: 10px;
+}
+
+.info1 a {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(139, 185, 254);
+}
+
+.span1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.info1 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(222, 226, 230, 0.75);
+}
+
+.info-footer {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(86, 94, 100) !important;
+}
+
+.info-footer a {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(86, 94, 100) !important;
+}
+
+/* snippets */
+.snippets-main
+{
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.snippet-heading h3
+{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    color: rgb(255, 255, 255);
+}
+.snippet-heading p{
+    font-size: 16px;
+    font-weight: 400;
+    color: gb(222, 226, 230);
+}
+
+.snippets-sub
+{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    gap: 18px;
+}
+.snippets-img
+{
+    border: 0.5px solid whitesmoke;
+    width: 285px;
+    height: 186px;
+
+}
+.card-info a{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(139, 185, 254);
+}
+.card-info p
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(222, 226, 230, 0.75);
+}
+
+
+/* customs */
+.cus-comp-main
+{
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.cus-comp-heading h3
+{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    color: rgb(255, 255, 255);
+}
+.cus-comp-heading p{
+    font-size: 16px;
+    font-weight: 400;
+    color: gb(222, 226, 230);
+}
+
+.cus-comp-sub
+{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    gap: 18px;
+}
+.cus-comp-img
+{
+    border: 0.5px solid whitesmoke;
+    width: 285px;
+    height: 186px;
+
+}
+.alert1
+{
+    background-color: #332701;
+    border-left: 3px solid #ffda6a ;
+    border-radius:0%;
+}
+.theme-text h3
+{
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(222, 226, 230);
+}
+.theme-text p
+{
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(222, 226, 230);
+}
+.sub-theme
+{
+    width: 50px;
+}
+.theme-btn button
+{
+    width: 158px;
+}
+
+
+
+
+
+
+
+/* footer */
+footer {
+    /* margin-left: 250px;
+    margin-right: 12px; */
+    margin-top: 150px;
+    background-color: rgba(43, 48, 53, 1);
+}
+
+.footer-body-main {
+    height: 400px;
+    background-color: rgba(43, 48, 53, 1);
+}
+
+.main-logo-footer {
+
+    margin-top: 80px !important;
+    margin-left: 30px;
+    margin-right: 80px;
+}
+
+.logo-footer span {
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(222, 226, 230, 0.75);
+}
+
+.main-logo-footer p {
+    font-size: 14px;
+    color: rgba(222, 226, 230, 0.75);
+}
+
+/* grid columns*/
+
+.grid-column-2 {
+    margin-top: 85px !important;
+    
+
+}
+.grid-column-2 li
+{
+    margin-bottom: 10px;
+    font-size: 16px;
+   
+}
+.grid-column-2 strong>li
+{
+    font-size: 20px;
+}
+.grid-column-2 a, strong
+{
+    color: rgba(222, 226, 230, 0.75) !important;
+}
